@@ -41,7 +41,7 @@ python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] [-
 
 We provide some models with different backbones and results of object detection and instance segmentation on MS COCO benchmark.
 
-|    name  | backbone  | iteration |  type  | validation | test-dev | download|
+|    name  | backbone  | iteration |  task  | validation | test-dev | download|
 | :-------------: | :-----: | :-----: | :-------------------: | :-----: | :------: | :-----------------: |
 |     D2Det | ResNet50   | 24 epoch  |  object detection  |   43.7   |    43.9     |          [model](https://drive.google.com/open?id=1es6y8Uu-fByOmTq_Y_M5uMuO42_ARI7k)         |
 |     D2Det | ResNet101   | 24 epoch   |  object detection  |  44.9    |    45.4      |       [model](https://drive.google.com/open?id=14Cw9Y3vSdirkR3xLcb6F6H1hHr3qzLNj)         |
@@ -61,3 +61,6 @@ If the project helps your research, please cite this paper.
   year =         {2020}
 }
 ```
+
+## Acknowledgement
+Many thanks to the open source codes, i.e., [mmdetection](https://github.com/open-mmlab/mmdetection) and [Grid R-CNN plus](https://github.com/STVIR/Grid-R-CNN).
