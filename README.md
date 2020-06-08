@@ -54,7 +54,7 @@ We provide some models with different backbones and results of object detection 
 If the project helps your research, please cite this paper.
 
 ```
-@misc{Cao_D2Det_ICCV_2020,
+@misc{Cao_D2Det_CVPR_2020,
   author =       {Jiale Cao and Hisham Cholakkal and Rao Muhammad Anwer and Fahad Shahbaz Khan and Yanwei Pang and Ling Shao},
   title =        {D2Det: Towards High Quality Object Detection and Instance Segmentation},
   journal =      {Proc. IEEE Conference on Computer Vision and Pattern Recognition},
