@@ -43,10 +43,10 @@ We provide some models with different backbones and results of object detection 
 
 |    name  | backbone  | iteration |  task  | validation | test-dev | download|
 | :-------------: | :-----: | :-----: | :-------------------: | :-----: | :------: | :-----------------: |
-|     D2Det | ResNet50   | 24 epoch  |  object detection  |   43.7   |    43.9     |          [model](https://drive.google.com/open?id=1es6y8Uu-fByOmTq_Y_M5uMuO42_ARI7k)         |
-|     D2Det | ResNet101   | 24 epoch   |  object detection  |  44.9    |    45.4      |       [model](https://drive.google.com/open?id=14Cw9Y3vSdirkR3xLcb6F6H1hHr3qzLNj)         |
-|     D2Det | ResNet101-DCN  | 24 epoch  |  object detection  |  46.9   |    47.5    |        [model](https://drive.google.com/open?id=1jDeAj_rMKLMf64BGwqiysis9IyZzTQ6w)         |
-|     D2Det | ResNet101     | 24 epoch|  instance segmentation  |  39.8    | 40.2  |          [model](https://drive.google.com/open?id=1rsYWWJ7zJ7-sSWz5q6aiuGFJS5bduSDo)         |
+|     D2Det | ResNet50   | 24 epoch  |  object detection  |   43.7 (box)  |    43.9 (box)     |          [model](https://drive.google.com/open?id=1es6y8Uu-fByOmTq_Y_M5uMuO42_ARI7k)         |
+|     D2Det | ResNet101   | 24 epoch   |  object detection  |  44.9 (box)    |    45.4 (box)      |       [model](https://drive.google.com/open?id=14Cw9Y3vSdirkR3xLcb6F6H1hHr3qzLNj)         |
+|     D2Det | ResNet101-DCN  | 24 epoch  |  object detection  |  46.9 (box)   |    47.5 (box)    |        [model](https://drive.google.com/open?id=1jDeAj_rMKLMf64BGwqiysis9IyZzTQ6w)         |
+|     D2Det | ResNet101     | 24 epoch|  instance segmentation  |  39.8 (mask)   | 40.2 (mask)  |          [model](https://drive.google.com/open?id=1rsYWWJ7zJ7-sSWz5q6aiuGFJS5bduSDo)         |
 
 - All the models are based on single-scale training and all the results are based on single-scale inference.
 
