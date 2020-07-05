@@ -277,7 +277,7 @@ class D2Det(TwoStageDetector):
                 mask_scores = self.get_mask_scores(reg_iou, det_bboxes, det_labels)
                 segm_result = self.get_seg_masks(
                     reg_pred_instance, det_bboxes[:, :4], det_labels, img_meta[0]['ori_shape'],
-                    img_meta[0]['scale_factor'], rescale=True)
+                    img_meta[0]['scale_factor'], rescale=rescale)
             else:
                 det_bboxes, det_labels = multiclass_nms1(det_bboxes[:, :4], det_bboxes[:, 4], det_labels + 1,
                                                          0.0, dict(type='soft_nms', iou_thr=0.5), 100)
