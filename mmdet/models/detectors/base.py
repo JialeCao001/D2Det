@@ -167,7 +167,10 @@ class BaseDetector(nn.Module, metaclass=ABCMeta):
             bboxes = np.vstack(bbox_result)
             # draw segmentation masks
             if segm_result is not None:
-                segms = mmcv.concat_list(segm_result)
+                if len(segm_result) > 1:
+                    segms = mmcv.concat_list(segm_result[0])
+                else:
+                    segms = mmcv.concat_list(segm_result)
                 inds = np.where(bboxes[:, -1] > score_thr)[0]
                 for i in inds:
                     color_mask = np.random.randint(
