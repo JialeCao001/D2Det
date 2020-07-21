@@ -6,8 +6,8 @@ This code is an official implementation of "D2Det: Towards High Quality Object D
 We propose a novel two-stage detection method, D2Det, that collectively addresses both precise localization and accurate classification. For precise localization, we introduce a dense local regression that predicts multiple dense box offsets for an object proposal. Different from traditional regression and keypoint-based localization employed in two-stage detectors, our dense local regression is not limited to a quantized set of keypoints within a fixed region and has the ability to regress position-sensitive real number dense offsets, leading to more precise localization. The dense local regression is further improved by a binary overlap prediction strategy that reduces the influence of background region on the final box regression. For accurate classification, we introduce a discriminative RoI pooling scheme that samples from various sub-regions of a proposal and performs adaptive weighting to obtain discriminative features.
 <table>
     <tr>
-        <td ><center><img src="demo/fig-visdet.jpg" height="160"> </center></td>
-        <td ><center><img src="demo/fig-visinstance.jpg" height="160" > </center></td>
+        <td ><center><img src="demo/fig-visdet.jpg" height="160" alt="dominating_sets_example2"> </center> </td>
+        <td ><center><img src="demo/fig-visinstance.jpg" height="160" alt>  </center> </td>
     </tr>
 </table>
 
