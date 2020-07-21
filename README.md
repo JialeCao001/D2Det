@@ -1,9 +1,6 @@
 # D2Det
 
 This code is an official implementation of "D2Det: Towards High Quality Object Detection and Instance Segmentation (CVPR2020)" based on the open source object detection toolbox [mmdetection](https://github.com/open-mmlab/mmdetection). 
-
-## Introduction
-We propose a novel two-stage detection method, D2Det, that collectively addresses both precise localization and accurate classification. For precise localization, we introduce a dense local regression that predicts multiple dense box offsets for an object proposal. Different from traditional regression and keypoint-based localization employed in two-stage detectors, our dense local regression is not limited to a quantized set of keypoints within a fixed region and has the ability to regress position-sensitive real number dense offsets, leading to more precise localization. The dense local regression is further improved by a binary overlap prediction strategy that reduces the influence of background region on the final box regression. For accurate classification, we introduce a discriminative RoI pooling scheme that samples from various sub-regions of a proposal and performs adaptive weighting to obtain discriminative features.
 <table>
     <tr>
         <td ><center><img src="demo/fig-visinstance.jpg" height="260">  </center> </td>
@@ -12,6 +9,9 @@ We propose a novel two-stage detection method, D2Det, that collectively addresse
         <td ><center><img src="demo/fig-visdet.jpg" width="720"> </center> </td>
     </tr>
 </table>
+
+## Introduction
+We propose a novel two-stage detection method, D2Det, that collectively addresses both precise localization and accurate classification. For precise localization, we introduce a dense local regression that predicts multiple dense box offsets for an object proposal. Different from traditional regression and keypoint-based localization employed in two-stage detectors, our dense local regression is not limited to a quantized set of keypoints within a fixed region and has the ability to regress position-sensitive real number dense offsets, leading to more precise localization. The dense local regression is further improved by a binary overlap prediction strategy that reduces the influence of background region on the final box regression. For accurate classification, we introduce a discriminative RoI pooling scheme that samples from various sub-regions of a proposal and performs adaptive weighting to obtain discriminative features.
 
 ## Installation
 - Please refer to [INSTALL.md](docs/INSTALL.md) of mmdetection. 
