@@ -14,7 +14,8 @@ We propose a novel two-stage detection method, D2Det, that collectively addresse
 </table>
 
 ## Installation
-Please refer to [INSTALL.md](docs/INSTALL.md) of mmdetection. I uses pytorch1.1.0, cuda9.0/10.0, and mmcv0.4.3.
+- Please refer to [INSTALL.md](docs/INSTALL.md) of mmdetection. 
+- I use pytorch1.1.0, cuda9.0/10.0, and mmcv0.4.3.
 
 ## Train and Inference
 Please use the following commands for training and testing by single GPU or multiple GPUs.
