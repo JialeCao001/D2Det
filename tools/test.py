@@ -1,5 +1,9 @@
 import argparse
 import os
+import os
+import os.path as osp
+import sys
+sys.path.insert(0, osp.join(osp.dirname(osp.abspath(__file__)), '../'))
 
 import mmcv
 import torch
