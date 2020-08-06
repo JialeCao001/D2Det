@@ -1,6 +1,6 @@
 # D2Det
 
-This code is an official implementation of "D2Det: Towards High Quality Object Detection and Instance Segmentation (CVPR2020)" based on the open source object detection toolbox [mmdetection](https://github.com/open-mmlab/mmdetection). 
+This code is an official implementation of "[D2Det: Towards High Quality Object Detection and Instance Segmentation (CVPR2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Cao_D2Det_Towards_High_Quality_Object_Detection_and_Instance_Segmentation_CVPR_2020_paper.pdf)" based on the open source object detection toolbox [mmdetection](https://github.com/open-mmlab/mmdetection). 
 <table>
     <tr>
         <td ><center><img src="demo/fig-visinstance.jpg" height="260">  </center> </td>
