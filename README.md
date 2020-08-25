@@ -59,7 +59,7 @@ We provide some models with different backbones and results of object detection 
 
 - All the models are based on single-scale training and all the results are based on single-scale inference.
 
-## Ciatation
+## Citation
 If the project helps your research, please cite this paper.
 
 ```
