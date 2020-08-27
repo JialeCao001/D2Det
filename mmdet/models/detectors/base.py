@@ -169,6 +169,8 @@ class BaseDetector(nn.Module, metaclass=ABCMeta):
             if segm_result is not None:
                 if len(segm_result) > 1:
                     segms = mmcv.concat_list(segm_result[0])
+                    bboxes[:, -1] = np.concatenate(
+                        segm_result[1]) / 1.3  # rescale the mask scores to the range of [0,1]
                 else:
                     segms = mmcv.concat_list(segm_result)
                 inds = np.where(bboxes[:, -1] > score_thr)[0]

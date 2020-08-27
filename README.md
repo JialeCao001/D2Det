@@ -20,6 +20,7 @@ We propose a novel two-stage detection method, D2Det, that collectively addresse
 ## Train and Inference
 Please use the following commands for training and testing by single GPU or multiple GPUs.
 
+
 #####  Train with a single GPU
 ```shell
 python tools/train.py ${CONFIG_FILE}
@@ -42,8 +43,18 @@ python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] [-
 ./tools/dist_test.sh ${CONFIG_FILE} ${CHECKPOINT_FILE} ${GPU_NUM} [--out ${RESULT_FILE}] [--eval ${EVAL_METRICS}]
 ```
 
-
 - CONFIG_FILE about D2Det is in [configs/D2Det](configs/D2Det), please refer to [GETTING_STARTED.md](docs/GETTING_STARTED.md) for more details.
+
+
+## Demo
+
+
+With our trained model, detection results of an image can be visualized using the following command.
+```shell
+python ./demo/D2Det_demo.py ${CONFIG_FILE} ${CHECKPOINT_FILE} ${IMAGE_FILE} [--out ${OUT_PATH}]
+e.g.,
+python ./demo/D2Det_demo.py ./configs/D2Det/D2Det_instance_r101_fpn_2x.py ./D2Det-instance-res101.pth ./demo/demo.jpg --out ./demo/aa.jpg
+```
 
 
 ## Results

@@ -155,7 +155,11 @@ def show_result(img,
     labels = np.concatenate(labels)
     # draw segmentation masks
     if segm_result is not None:
-        segms = mmcv.concat_list(segm_result)
+        if len(segm_result) > 1:
+            segms = mmcv.concat_list(segm_result[0])
+            bboxes[:, -1] = np.concatenate(segm_result[1])/1.3#rescale the mask scores to the range of [0,1]
+        else:
+            segms = mmcv.concat_list(segm_result)
         inds = np.where(bboxes[:, -1] > score_thr)[0]
         np.random.seed(42)
         color_masks = [
@@ -185,7 +189,8 @@ def show_result_pyplot(img,
                        result,
                        class_names,
                        score_thr=0.3,
-                       fig_size=(15, 10)):
+                       fig_size=(15, 10),
+                       out_file=None):
     """Visualize the detection results on the image.
 
     Args:
@@ -199,6 +204,7 @@ def show_result_pyplot(img,
             be written to the out file instead of shown in a window.
     """
     img = show_result(
-        img, result, class_names, score_thr=score_thr, show=False)
-    plt.figure(figsize=fig_size)
-    plt.imshow(mmcv.bgr2rgb(img))
+        img, result, class_names, score_thr=score_thr, show=False, out_file=out_file)
+    if out_file is None:
+        plt.figure(figsize=fig_size)
+        plt.imshow(mmcv.bgr2rgb(img))
